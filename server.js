@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const port = process.env.PORT;
 
 const app = express();
-
+/// middleware
 app.use(express.json());
 
 const bookRoutes = require("./routers/bookRouters");
