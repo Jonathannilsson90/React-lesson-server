@@ -19,6 +19,6 @@ type: String,
 required: false,
 }
 
-})
+}, { versionKey : false} )
 
 module.exports = mongoose.model("book",bookSchema)
