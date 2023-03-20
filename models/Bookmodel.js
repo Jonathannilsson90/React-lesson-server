@@ -1,24 +1,26 @@
 /// title(string),author(string),liked(boolean).
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-const bookSchema = mongoose.Schema({
-title:{
-    type: String,
-    required: true,
-},
-author:{
-    type: String,
-    required: true,
-},
-liked:{
-    type: Boolean,
-    required: true,
-},
-img:{
-type: String,
-required: false,
-}
+const bookSchema = mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+    },
+    author: {
+      type: String,
+      required: true,
+    },
+    liked: {
+      type: Boolean,
+      required: true,
+    },
+    img: {
+      type: String,
+      required: false,
+    },
+  },
+  { versionKey: false }
+);
 
-}, { versionKey : false} )
-
-module.exports = mongoose.model("book",bookSchema)
+module.exports = mongoose.model("book", bookSchema);
